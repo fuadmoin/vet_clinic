@@ -1,3 +1,14 @@
+<a name="readme-top"></a>
+
+<div align="center">
+  
+  <img src="./img/logo2.png" alt="logo" width="140"  height="auto" />
+  <br/>
+
+  <h3><b>Vet Clinic</b></h3>
+
+</div>
+
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
@@ -34,27 +45,13 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Vet Clinic] <a name="about-project"></a>
 
-**[your_project__name]** is a...
+**[Vet Clinic]** is a project for exercising how to create a database and populate it with data.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
 
 <details>
 <summary>Database</summary>
@@ -67,17 +64,8 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ### Key Features <a name="key-features"></a>
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](replace-with-your-deployment-URL)
+- **[a database with a table ]**
+- **[queries for inserting and retreiving data ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,6 +85,7 @@ Code editor (VSCode,Atom etc...)
 A browser (Chrome,Mozilla,Safari etc...)
 Version Control System (Git and Github)
 NodeJS (https://nodejs.org/en/)
+PostgreSQL (https://www.postgresql.org/)
 ```
 
 ### Setup
@@ -105,7 +94,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone https://github.com/fuadmoin/vet_clinic.git
 ```
 
 ### Install
@@ -160,9 +149,9 @@ You can deploy this project using [Render](https://render.com/).
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[more tables will be added to the database]**
+- [ ] **[queries for updating and deleting will be added]**
+- [ ] **[queries for altering columns of a table]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -172,7 +161,7 @@ You can deploy this project using [Render](https://render.com/).
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/fuadmoin/vet_clinic/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
