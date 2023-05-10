@@ -97,31 +97,19 @@ Clone this repository to your desired folder:
   git clone https://github.com/fuadmoin/vet_clinic.git
 ```
 
-### Install
-
-Install this project with:
-
-```sh
-  cd my-project
-  npm install
-```
-
 ### Usage
 
-To run the project, execute the following command:
+To duplicate the database used in this repository, use the following command in your SQL shell:
 
 ```
-  code .
-  npm start
+  CREATE DATABASE vet_clinic;
 ```
+
+then use the queres in the [schema.sql](./schema.sql) file to create the tables and the [data.sql](./data.sql) file to populate the tables with data.
 
 ### Run tests
 
-To run tests, run the following command:
-
-```sh
-npm test
-```
+To run tests, use the queres in the [queries.sql](./queries.sql) file to test the database.
 
 ### Deployment
 
