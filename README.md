@@ -135,8 +135,6 @@ You can deploy this project using [Render](https://render.com/).
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
 - [ ] **[more tables will be added to the database]**
 - [ ] **[queries for updating and deleting will be added]**
 - [ ] **[queries for altering columns of a table]**
