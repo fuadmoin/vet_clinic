@@ -45,9 +45,9 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Vet Clinic] <a name="about-project"></a>
+# 📖 Vet Clinic <a name="about-project"></a>
 
-**[Vet Clinic]** is a project for exercising how to create a database and populate it with data.
+**Vet Clinic** is a project for exercising how to create a database and populate it with data.
 
 ## 🛠 Built With <a name="built-with"></a>
 
