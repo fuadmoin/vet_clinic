@@ -88,3 +88,42 @@ SELECT species, AVG(escape_attempts)
 FROM animals
 WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31'
 GROUP BY species;
+
+SELECT A.name as animals, O.full_name as owner
+FROM animals A
+JOIN owners O ON A.owner_id = O.id
+WHERE O.full_name = 'Melody Pond';
+
+SELECT A.name as animals, S.name as species
+FROM animals A
+JOIN species S ON A.species_id = S.id
+WHERE S.name = 'Pokemon';
+
+SELECT A.name as animals, O.full_name as owners
+FROM owners O
+LEFT JOIN animals A ON A.owner_id = O.id;
+
+SELECT S.name as species_name, COUNT(A.id) as animal_count
+FROM species S
+LEFT JOIN animals A ON A.species_id = S.id
+GROUP BY S.name;
+
+SELECT A.name as animal, S.name as species, O.full_name as owner
+FROM animals A
+JOIN species S ON A.species_id = S.id
+JOIN owners O ON A.owner_id = O.id
+WHERE S.name = 'Digimon' AND O.full_name = 'Jennifer Orwell';
+
+SELECT A.name as animal, O.full_name as owner, A.escape_attempts
+FROM animals A
+JOIN species S ON A.species_id = S.id
+JOIN owners O ON A.owner_id = O.id
+WHERE A.escape_attempts = 0 AND O.full_name = 'Dean Winchester';
+
+SELECT COUNT(A.id) as animal_count, O.full_name as owner
+FROM owners  O
+LEFT JOIN animals A ON A.owner_id = O.id
+GROUP BY O.full_name
+HAVING COUNT(A.id) = (
+SELECT MAX(animal_count) FROM (SELECT COUNT(id) AS animal_count
+ FROM animals GROUP BY owner_id) subq);
