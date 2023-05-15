@@ -59,3 +59,26 @@ CREATE TABLE visits (
     visit_date DATE NOT NULL,
     PRIMARY KEY (animal_id, vet_id, visit_date)
 );
+
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+ALTER TABLE owners ALTER COLUMN age DROP NOT NULL; 
+
+ALTER TABLE owners ALTER COLUMN age 
+SET DEFAULT FLOOR(RANDOM() * (60 - 18 + 1)) + 18;
+
+ALTER TABLE visits ALTER COLUMN visit_date TYPE TIMESTAMP;
+
+CREATE INDEX visits_clustered_index2
+ON visits USING btree (vet_id, animal_id, visit_date);
+SELECT vet_id from visits;
+
+CREATE INDEX owners_clustered_index
+ON owners USING btree (email, full_name, id, age);
+SELECT vet_id from visits;
+
+CREATE INDEX animal_id_index ON visits (animal_id);
+
+CREATE INDEX visits_clustered_index2
+ON visits USING btree (vet_id, animal_id, visit_date);
+SELECT vet_id from visits;
