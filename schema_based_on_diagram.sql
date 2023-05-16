@@ -65,8 +65,12 @@ CREATE TABLE invoice_items(
     CONSTRAINT "fk_invoice.id"
     FOREIGN KEY (invoice_id)
      REFERENCES invoices(id)
+        ON DELETE CASCADE,
+    CONSTRAINT "fk_treatment.id"
+    FOREIGN KEY (treatment_id)
+     REFERENCES treatments(id)
         ON DELETE CASCADE
 );
 
-CREATE INDEX invoice_items_id_index
- ON invoice_items (invoice_id);
+CREATE INDEX invoice_treatment_index
+ ON invoice_items (invoice_id, treatment_id);
